@@ -16,6 +16,6 @@ The ANN workflow follows these steps:
 
 Input Data – Collects driving behavior and vehicle sensor data.
 Preprocessing – Cleans and normalizes data for consistency.
-Feature Extraction – CNN extracts important driving risk factors.
+Feature Extraction – ANN extracts important driving risk factors.
 Risk Classification – Predicts insurance risk category (low/medium/high).
 Explainability & Output – Provides factor-wise risk breakdown using SHAP.
