@@ -1,21 +1,25 @@
 # Insurance-Risk-Prediction
-ANN-Based Vehicle Insurance Risk Prediction
+This project implements an Artificial Neural Network (ANN) for vehicle insurance risk prediction using real-time driving behavior data. The model classifies risk into Low, Moderate, and High categories based on driving parameters such as speed, braking, acceleration, engine load, fuel consumption, mileage, engine RPM, throttle position, and past accident history.
 
-This repository contains a Convolutional Neural Network (ANN) model designed to predict vehicle insurance risk based on real-time driving data and historical claims. The model analyzes various risk factors, including driving behavior and vehicle diagnostics, to provide an accurate risk assessment.
+Key Features
 
- Key Features
+ Risk Prediction Model: Trained on a dataset of 100,000 records using ANN with dropout layers for regularization.
+ Data Preprocessing: Includes feature standardization, class balancing (SMOTE), and label encoding.
+ Model Performance Visualization: Generates key plots, including Confusion Matrix, Loss & Accuracy Curves, SHAP Feature Importance, and ROC Curve.
+ Explainability with SHAP: Provides insights into how each driving factor impacts risk classification.
+ SMOTE for Imbalance Handling: Ensures effective learning by balancing risk category distributions.
+ Premium Estimation: Maps predicted risk categories to dynamic insurance pricing.
 
-Deep Learning with ANN: Utilizes convolutional layers for feature extraction and risk prediction.
-Driving Score Calculation: Assigns a risk score based on real-time and past driving data.
-Integration with Digital Twin: Maps historical driving patterns to generate personalized risk insights.
-SHAP Explainability: Uses SHAP (SHapley Additive Explanations) to interpret model predictions.
-Automated Risk Analysis: Categorizes drivers into low, moderate, and high-risk segments.
- Flowchart Representation
+Visualizations Included 
 
-The ANN workflow follows these steps:
+ Confusion Matrix (Model Predictions)
+ Loss & Accuracy Curves (Training Process)
+ Feature Distribution Histograms (Driving Factors)
+ Pairplots & Violin Plots (Feature Relationships)
+ SHAP Summary Plot (Feature Importance)
+ ROC & Precision-Recall Curves (Model Evaluation)
 
-Input Data – Collects driving behavior and vehicle sensor data.
-Preprocessing – Cleans and normalizes data for consistency.
-Feature Extraction – ANN extracts important driving risk factors.
-Risk Classification – Predicts insurance risk category (low/medium/high).
-Explainability & Output – Provides factor-wise risk breakdown using SHAP.
+Technology Stack
+
+ Python, TensorFlow, Scikit-Learn, Pandas, NumPy
+ Matplotlib, Seaborn, SHAP for Model Explainability
